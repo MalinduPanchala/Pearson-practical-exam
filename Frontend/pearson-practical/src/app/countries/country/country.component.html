@@ -1,0 +1,19 @@
+<mat-toolbar class="form-toolbar">
+    <span>{{service.form.controls["id"].value?"Update country":"New Country"}}</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button (click)="onClose()">
+        <mat-icon>
+            close
+        </mat-icon>
+    </button>
+</mat-toolbar>
+<form [formGroup] = "service.form" (submit)="onSubmit()" class="normal-form">
+    <input type="hidden" formControlName="id">
+    <mat-form-field>
+        <input formControlName="name" matInput placeholder="Name"  autocomplete="off">
+        <mat-error>Please fill this field</mat-error>
+    </mat-form-field>
+    <div class="button-row">
+        <button mat-raised-button color="primary" type="submit" [disabled]="service.form.invalid">Submit</button>
+    </div>
+</form>

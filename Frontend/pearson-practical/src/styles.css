@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+form.normal-form {
+    margin: 10px;
+}
+
+.button-row {
+    margin: 10px 0px;
+}
+
+.data-table, .search{ 
+    padding: 0px 20px 5px 20px;
+    margin: 30px 150px;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.fab-container {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.form-toolbar {
+    width: 500px;
+} 
+
+.green-snackbar {
+    background: #43a047;
+    color: white;
+}
+
+.red-snackbar {
+    background: #d50000;
+    color: white;
+}
