@@ -23,7 +23,9 @@ see https://github.com/MalinduPanchala/Pearson-practical-exam/tree/main/Frontend
 The app has a simple interface to manage data. There is a floating action button in the bottom-right to add a new Country. It will open up a dialog box and you can enter name 
 in the input field and submit. Submitted data will be displayed in the table. Each record has update and delete buttons and you can perfom update and delete with them.
 The data in the table can be sorted by the name by clicking "Name" in the header and can be viewed data in seperate pages and navigate between them from paginator bar.
+You can use search bar on the top of the table to quickly find a country
 
 A brief overview can be seen by clicking the info button on the top-right corner. These are all the oprations this app performs.
+Follow https://drive.google.com/file/d/1e4WrRt2ssLz_UDv40nyfUf3qpo2wvNDw/view?usp=sharing this link to see a demo video 
 
 Thank you for the this oppertunity!
