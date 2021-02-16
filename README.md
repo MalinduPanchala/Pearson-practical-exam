@@ -17,7 +17,8 @@ ex:-"http://127.0.0.1:8080/rest/v2/countries/1" this url will update the record 
 
 After that open Frontend folder in the root folder in a terminal and navigate inside the frontend/pearson-practical and then enter command "npm i" and run.
 This will install all the neccessary node modules. After installing node modules then you can launch the app from running "ng serve --i" and this will launch the app 
-on port 4200 in "http://127.0.0.1" or "localhost".
+on port 4200 in "http://127.0.0.1" or "localhost". For more information about laucnhing this angular app,
+see https://github.com/MalinduPanchala/Pearson-practical-exam/tree/main/Frontend/pearson-practical
 
 The app has a simple interface to manage data. There is a floating action button in the bottom-right to add a new Country. It will open up a dialog box and you can enter name 
 in the input field and submit. Submitted data will be displayed in the table. Each record has update and delete buttons and you can perfom update and delete with them.
