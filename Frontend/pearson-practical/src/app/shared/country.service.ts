@@ -28,11 +28,11 @@ export class CountryService {
   });
 
   getAllCountries(): Observable<any[]> {
-    return this.http.get<any[]>("http://localhost:8080/api/v2/countries/")
+    return this.http.get<any[]>("http://localhost:8080/rest/v2/countries/")
   }
 
   insertCountry(data): Observable<any> {
-    return this.http.post("http://localhost:8080/api/v2/countries/",data)
+    return this.http.post("http://localhost:8080/rest/v2/countries/",data)
     .pipe(
       tap(()=> {
         this._refreshNeeded.next();
@@ -41,7 +41,7 @@ export class CountryService {
   }
 
   updateCountry(data): Observable<any> {
-    return this.http.put("http://localhost:8080/api/v2/countries/" + data.id,data)
+    return this.http.put("http://localhost:8080/rest/v2/countries/" + data.id,data)
     .pipe(
       tap(()=> {
         this._refreshNeeded.next();
@@ -50,7 +50,7 @@ export class CountryService {
   }
 
   deleteCountry(data) {
-    this.http.delete("http://localhost:8080/api/v2/countries/" + data.id)
+    this.http.delete("http://localhost:8080/rest/v2/countries/" + data.id)
     .pipe(
       tap(()=> {
         this._refreshNeeded.next();

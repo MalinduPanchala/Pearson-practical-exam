@@ -13,6 +13,7 @@ import { HttpClientModule } from "@angular/common/http"
 
 import { CountryService } from "./shared/country.service";
 import { CountryListComponent } from './countries/country-list/country-list.component';
+import { InfoComponentComponent } from './info-component/info-component.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CountryListComponent } from './countries/country-list/country-list.comp
     AppComponent,
     CountriesComponent,
     CountryComponent,
-    CountryListComponent
+    CountryListComponent,
+    InfoComponentComponent
   ],
   imports: [
     BrowserModule,

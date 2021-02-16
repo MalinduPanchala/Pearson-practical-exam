@@ -1,6 +1,10 @@
 <div class="container">
     <mat-toolbar color="primary">
         <span>Countries</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" (click)="openInfo()">
+            <mat-icon>info_outlined</mat-icon>
+        </button>
     </mat-toolbar>
     <app-country-list></app-country-list>
 </div>
